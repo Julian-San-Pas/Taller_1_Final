@@ -74,7 +74,7 @@ public class Cajero : MonoBehaviour
 
     public void Dequeue()
     {
-        // Adaptado, pero usamos el del manager
+        // Adaptado,
         if (queueManager.colaClientes.Count > 0)
         {
             // Llama a AtenderCliente en lugar
@@ -117,7 +117,7 @@ public class Cajero : MonoBehaviour
     public TextMeshProUGUI texto; 
     int delayCoroutine;
 
-    public List<Cliente> clientes = new List<Cliente>(); // Mantengo, pero usamos cola principal
+    public List<Cliente> clientes = new List<Cliente>(); // Mantengo, pero uso cola principal
 
     
 }

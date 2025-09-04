@@ -1,8 +1,8 @@
 using System;
-using UnityEngine;
 
 namespace PackagePersona
 {
+    [Serializable]
     public class Persona
     {
         private string nombre;
@@ -20,9 +20,4 @@ namespace PackagePersona
         public string Correo { get => correo; set => correo = value; }
         public string Direccion { get => direccion; set => direccion = value; }
     }
-
 }
-
-
-//Lista
-

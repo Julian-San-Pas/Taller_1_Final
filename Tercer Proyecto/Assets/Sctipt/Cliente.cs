@@ -1,30 +1,31 @@
 using System;
 using UnityEngine;
 using PackagePersona;
-using System.Collections.Generic;
-using Random = UnityEngine.Random;
 
 namespace packageCliente
 {
+    [Serializable]
     public class Cliente : Persona
     {
         private string idCliente;
         private string tramite;
-        private int tiempoA;
+        private float tiempoA; // Cambiado a float para segundos con decimales
 
         public Cliente() { }
 
-        public Cliente(string idCliente, string tramite, int tiempoA, string nombre, string correo, string direccion)
+        public Cliente(string idCliente, string tramite, float tiempoA, string nombre, string correo, string direccion)
             : base(nombre, correo, direccion)
         {
             this.idCliente = idCliente;
             this.tramite = tramite;
-            this.tiempoA = tiempoA;                                                             
+            this.tiempoA = tiempoA;
         }
 
         public string IdCliente { get => idCliente; set => idCliente = value; }
         public string Tramite { get => tramite; set => tramite = value; }
-        public int AtencionT { get => tiempoA; set => tiempoA = value; }
+        public float AtencionT { get => tiempoA; set => tiempoA = value; }
+    }
+}
         /*
         public int generarID()
         {

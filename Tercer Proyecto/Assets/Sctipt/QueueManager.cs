@@ -1,4 +1,4 @@
-// QueueManager.cs (Renamed and heavily fixed from your original Cajero.cs. Attach to a GameObject)
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

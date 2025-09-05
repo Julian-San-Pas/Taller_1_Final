@@ -1,0 +1,26 @@
+{
+    "clientesEnCola": 0,
+    "transaccionesConsignacion": 7,
+    "cajeros": [
+        {
+            "idCajero": 1,
+            "clientesAtendidos": 2,
+            "tiempoTotal": 5.864168643951416
+        },
+        {
+            "idCajero": 2,
+            "clientesAtendidos": 3,
+            "tiempoTotal": 8.10959529876709
+        },
+        {
+            "idCajero": 3,
+            "clientesAtendidos": 3,
+            "tiempoTotal": 9.534965515136719
+        },
+        {
+            "idCajero": 4,
+            "clientesAtendidos": 4,
+            "tiempoTotal": 12.29697036743164
+        }
+    ]
+}

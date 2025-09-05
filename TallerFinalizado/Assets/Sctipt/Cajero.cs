@@ -14,9 +14,9 @@ public class Cajero : MonoBehaviour
     private Queue<Cliente> colaCompartida;
 
     [Header("UI")]
-    public Image estadoImagen;   // la imagen estandar del cajero
-    public Sprite spriteLibre;   // cambiar la imagen a libre
-    public Sprite spriteOcupado; // cambiar la imagen a ocupado
+    public Image estadoImagen;  
+    public Sprite spriteLibre;   
+    public Sprite spriteOcupado; 
 
     private bool ocupado = false;
 
@@ -49,7 +49,7 @@ public class Cajero : MonoBehaviour
 
         yield return new WaitForSecondsRealtime(cliente.tiempoAtencion);
 
-        Debug.Log($"Cajero {idCajero} terminó con {cliente.idCliente}");
+        Debug.Log($"Cajero {idCajero} terminï¿½ con {cliente.idCliente}");
 
         ocupado = false;
         ActualizarEstadoVisual();
@@ -60,6 +60,8 @@ public class Cajero : MonoBehaviour
         if (estadoImagen != null)
         {
             estadoImagen.sprite = ocupado ? spriteOcupado : spriteLibre;
-        }
-    }
+        }
+    }
+
+
 }

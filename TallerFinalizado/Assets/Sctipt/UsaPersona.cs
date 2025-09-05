@@ -46,7 +46,7 @@ IEnumerator GenerarClientes()
 {
     while (true)
     {
-        int cantidad = rnd.Next(1, 4); // Aqui genera entre 1 y 3 clientes aleatoriamente
+        int cantidad = rnd.Next(1, 4); 
         for (int i = 0; i < cantidad; i++)
         {
             string id = System.Guid.NewGuid().ToString().Substring(0, 5);
@@ -69,10 +69,10 @@ IEnumerator GenerarClientes()
             Debug.Log($"+ Encolado {cliente.idCliente} ({cliente.tramite})");
         }
 
-        //  esperar un segundo nomas
+        
         yield return new WaitForSeconds(1f);
 
-        //  Esto es para que el codigo espere otro segundo "fue por efectos visuales"
+        
         yield return new WaitForSeconds(1f);
     }
 }
